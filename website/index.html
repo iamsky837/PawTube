@@ -13,25 +13,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <style>
     :root {
-      --bg: #0f1415;
-      --surface: #151b1c;
-      --surface-2: #1d2526;
-      --surface-3: #263133;
+      --bg: #0f0f0f;
+      --surface: #181818;
+      --surface-2: #212121;
+      --surface-3: #2a2a2a;
       --border: rgba(255, 255, 255, 0.08);
-      --border-hi: rgba(188, 235, 238, 0.18);
-      --primary: #5ab0b8;
-      --primary-2: #297f87;
-      --primary-dark: #004f56;
-      --text: #e1e3e4;
-      --text-dim: #a0a6a7;
-      --text-muted: #6f7b7c;
-      --danger: #f47f7f;
+      --border-hi: rgba(255, 255, 255, 0.24);
+      --primary: #ff3d3d;
+      --primary-2: #cc0000;
+      --primary-dark: #8a0000;
+      --text: #f1f1f1;
+      --text-dim: #b3b3b3;
+      --text-muted: #8f8f8f;
+      --danger: #ff6b81;
       --radius-sm: 12px;
       --radius-md: 18px;
       --radius-lg: 28px;
       --radius-xl: 38px;
       --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-2) 100%);
-      --glow: rgba(90, 176, 184, 0.2);
+      --glow: rgba(255, 61, 61, 0.24);
       --font-display: 'Syne', sans-serif;
       --font-body: 'Plus Jakarta Sans', sans-serif;
       --transition: 0.24s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -44,8 +44,8 @@
     }
 
     body {
-      background: radial-gradient(circle at 8% 10%, rgba(90, 176, 184, 0.18), transparent 45%),
-                  radial-gradient(circle at 90% 20%, rgba(41, 127, 135, 0.22), transparent 42%),
+      background: radial-gradient(circle at 8% 10%, rgba(255, 61, 61, 0.16), transparent 45%),
+                  radial-gradient(circle at 90% 20%, rgba(204, 0, 0, 0.2), transparent 42%),
                   var(--bg);
       color: var(--text);
       font-family: var(--font-body);
@@ -73,7 +73,7 @@
     .orb-1 {
       width: 260px;
       height: 260px;
-      background: #5ab0b8;
+      background: #ff3d3d;
       left: -60px;
       top: 5%;
     }
@@ -81,7 +81,7 @@
     .orb-2 {
       width: 220px;
       height: 220px;
-      background: #297f87;
+      background: #cc0000;
       right: -50px;
       top: 18%;
       animation-delay: -2s;
@@ -90,7 +90,7 @@
     .orb-3 {
       width: 180px;
       height: 180px;
-      background: #004f56;
+      background: #8a0000;
       right: 14%;
       bottom: 8%;
       animation-delay: -4s;
@@ -110,7 +110,7 @@
       align-items: center;
       padding: 1rem 5%;
       backdrop-filter: blur(14px);
-      background: rgba(15, 20, 21, 0.84);
+      background: rgba(15, 15, 15, 0.84);
       border-bottom: 1px solid var(--border);
     }
 
@@ -192,8 +192,8 @@
       font-size: 0.75rem;
       font-weight: 700;
       color: var(--primary);
-      border: 1px solid rgba(90, 176, 184, 0.35);
-      background: rgba(90, 176, 184, 0.12);
+      border: 1px solid rgba(255, 61, 61, 0.35);
+      background: rgba(255, 61, 61, 0.12);
       padding: 0.4rem 0.8rem;
       border-radius: 100px;
       white-space: nowrap;
@@ -215,8 +215,8 @@
     }
 
     .search-card:focus-within {
-      border-color: rgba(90, 176, 184, 0.48);
-      box-shadow: 0 0 0 3px rgba(90, 176, 184, 0.12);
+      border-color: rgba(255, 61, 61, 0.52);
+      box-shadow: 0 0 0 3px rgba(255, 61, 61, 0.16);
     }
 
     .input-row {
@@ -247,7 +247,7 @@
     }
 
     #url-input::placeholder {
-      color: #7e8a8b;
+      color: #8a8a8a;
     }
 
     .play-btn, .control-btn, .clear-btn {
@@ -262,7 +262,7 @@
       align-items: center;
       gap: 0.45rem;
       background: var(--gradient);
-      color: #062426;
+      color: #ffffff;
       font-weight: 700;
       border-radius: var(--radius-md);
       padding: 0.65rem 1.1rem;
@@ -316,12 +316,12 @@
 
     .toggle-switch input:checked + .slider {
       background: var(--primary);
-      border-color: rgba(90, 176, 184, 0.9);
+      border-color: rgba(255, 61, 61, 0.9);
     }
 
     .toggle-switch input:checked + .slider::after {
       transform: translateX(17px);
-      background: #042224;
+      background: #1a0000;
     }
 
     .player-wrapper {
@@ -377,8 +377,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(90, 176, 184, 0.15);
-      border: 1px solid rgba(90, 176, 184, 0.35);
+      background: rgba(255, 61, 61, 0.15);
+      border: 1px solid rgba(255, 61, 61, 0.35);
     }
 
     .empty-icon-wrap .material-symbols-rounded,
@@ -404,7 +404,7 @@
 
     .bg-overlay {
       display: none;
-      background: rgba(15, 20, 21, 0.95);
+      background: rgba(15, 15, 15, 0.95);
       z-index: 10;
     }
 
@@ -439,8 +439,8 @@
 
     .control-btn.active {
       color: var(--primary);
-      border-color: rgba(90, 176, 184, 0.36);
-      background: rgba(90, 176, 184, 0.12);
+      border-color: rgba(255, 61, 61, 0.4);
+      background: rgba(255, 61, 61, 0.14);
     }
 
     .history-section {
@@ -556,8 +556,8 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      border: 1px solid rgba(90, 176, 184, 0.28);
-      background: rgba(90, 176, 184, 0.12);
+      border: 1px solid rgba(255, 61, 61, 0.28);
+      background: rgba(255, 61, 61, 0.12);
       color: var(--primary);
       display: flex;
       align-items: center;
@@ -567,7 +567,7 @@
 
     .history-item:hover .history-play {
       background: var(--primary);
-      color: #042224;
+      color: #1a0000;
     }
 
     footer {
@@ -609,8 +609,8 @@
 
     .social-btn:hover {
       color: var(--primary);
-      background: rgba(90, 176, 184, 0.14);
-      border-color: rgba(90, 176, 184, 0.3);
+      background: rgba(255, 61, 61, 0.14);
+      border-color: rgba(255, 61, 61, 0.3);
       transform: translateY(-2px);
     }
 
